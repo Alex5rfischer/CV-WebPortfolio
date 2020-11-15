@@ -1,0 +1,401 @@
+/* Dropdown Button */
+.Name {
+  position: fixed;
+  margin: 25px auto 50px 46%;
+  font-family: 'times new roman', sans-serif;
+  font-size: 18px;
+  color: #333;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.copyright {
+  display: inline;
+  margin-left: 25%;
+}
+
+.course {
+  margin-left: 80px;
+  text-align: left;
+}
+
+.footer-main {
+  display: inline;
+  margin-left: 34%;
+}
+
+.footer-link {
+  display: inline;
+}
+
+.Navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background-color: white;
+  margin-bottom: 10px;
+  z-index: 1;
+  width: 100%;
+}
+
+.icon {
+  position: relative;
+  float: left;
+  bottom: 8px;
+  right: 3%;
+  width: 65px;
+  height: 65px;
+}
+
+.ieee {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  margin-left: 10%;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+}
+
+.toc-h1 {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  width: auto;
+}
+
+.toc-h1 a {
+  color: #333;
+  padding: 5px 20px 5px 30px;
+  display: block;
+  font-family: 'Monteserrat', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/*1. dropdown ICON*/
+.dropbtn {
+  position: fixed;
+  display: inline;
+  border: none;
+  opacity: 0.5;
+  outline: none;
+  color: black;
+  background-color: #fafafa;
+  margin: 0px auto 40px 10px;
+  padding: 15px 1em 16px 40px;
+  font-size: 23px;
+}
+
+/* Dropdown button on hover & focus*/
+.dropbtn:hover, .dropbtn:focus {
+  background-color: ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F3E9E7;
+  min-width: 250px;
+  z-index: 1000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.answer {
+  color: white;
+}
+
+.top-container p {
+  color: white;
+  text-align: center;
+}
+
+.top-container {
+  background-color: #E3D0AE;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.middle-container {
+  background-color: #ddd;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.workexperience-container {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #F5F5F5;
+}
+
+.bottom-container {
+  padding: 50px auto 30px;
+  margin: 20px auto 20px auto;
+}
+
+.workexperience-description {
+  width: 50%;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  padding-bottom: 50px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.resume {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  padding-bottom: 50px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.workexperience-resume {
+  background-color: #F5F5F5;
+  width: 50%;
+  margin: 60px auto 80px auto;
+  text-align: left;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.humber-resumetitle {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  margin-left: 10%;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+}
+
+.fun-resumetitle
+{
+  display:inline;
+  bottom:30px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.udemy-resumetitle {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  margin-left: 10%;
+  font-size: 11px;
+  margin-top: 30px;
+  letter-spacing: 0.3em;
+}
+
+.workexperience-title {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 700;
+  margin-left: 10%;
+  margin-top: -120px;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+}
+
+.resumeDescription {
+  color: #333333;
+  text-align: left;
+  height: auto;
+  margin-top: -40px;
+  padding-top: 60px;
+  line-height: 34px;
+  margin-left: 90px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.skills {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.tools {
+  border: 1px solid #50a9d1;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: auto;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1.33333em;
+  padding: 7px 18px;
+  margin-top: 0.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+.education {
+  border-bottom: none;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  width: 90%;
+}
+
+a {
+  color: #3a92c8;
+  text-decoration: none;
+}
+
+body {
+  /*Margin alone configures all fours sides of your element that is selected*/
+  margin: 0px;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin-top: 0px;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  margin-right: 5%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3em;
+  padding-bottom: 50px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#frontimage img {
+  margin-top: 100px;
+  width: 50%;
+  min-width: 800px;
+}
+
+#frontimage {
+  background-color: #4C5364;
+  width: 100%;
+}
+
+#console {
+  background-color: #383737;
+  margin: auto;
+  top: 20px;
+  padding: 40px 1em 80px 3em;
+  /*Top/right/bottom/left*/
+  font-family: 'Monaco', 'Courier New';
+  font-size: 13px;
+  position: relative;
+  color: white;
+  height: 600px;
+  width: 600px;
+}
+
+#udemy-institution {
+  font-size: 12px;
+  margin-left: -67%;
+}
+
+#udemy-program {
+  margin-right: 53%;
+}
+
+#udemy-city {
+  font-size: 12px;
+  margin-left: -20%;
+  float: right;
+}
+
+#udemy-time {
+  float: right;
+  font-size: 12px;
+}
+
+#tools-udemy {
+  margin-left: 2%;
+}
+
+#humber-institution {
+  display: inline;
+  font-size: 12px;
+  margin-right:53%;
+}
+
+#humber-program {
+  font-size: 12px;
+  margin-left: 0.2%;
+}
+
+#humber-time {
+  font-size: 12px;
+  float:right;
+}
+
+#tools-humber {
+  margin-top: 20px;
+  margin-left: -5%;
+}
+
+#humber-city {
+  font-size: 12px;
+  margin-left: 5%;
+}
+
+#relevantCourse {
+  font-size: 14px;
+  color: #333333;
+  text-align: left;
+  margin-left: 9.5%;
+}
