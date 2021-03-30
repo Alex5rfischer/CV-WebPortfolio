@@ -5,46 +5,34 @@
   <meta charset="utf-8">
   <title>Alex La</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+  <script rel="javascript" href="js/javascript.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Rokkitt|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
-<body>
+<body data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+
   <div class="Navigation-bar">
     <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">☰</button>
+      <!-- <button onclick="myFunction()" class="dropbtn">☰</button> -->
       <a href="#AlexLa" class="Name">ALEX LA</a>
-      <div id="myDropdown" class="dropdown-content">
-        <li class="toc-h1"><a href="#about">About</a></li>
-        <li class="toc-h1"><a href="#Résumé">Résumé</a></li>
-        <li class="toc-h1"><a href="#Work">Work</a></li>
-        </ul>
-      </div>
+
     </div>
 
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
   </div>
 
   <div id="frontimage">
@@ -77,14 +65,14 @@
         &gt; Alex.workExperience.latest<br />
         <span class="answer">
           &nbsp;&nbsp;=&gt; Latest Work Experience<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; company: "IDEO"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; role: "Digital Shop Intern"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startDate: "June 2013"<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endDate: "August 2013"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; company: "Institute of Electrical and Electronics Engineers at Humber"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; role: "Treasurer"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startDate: "October 2019"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endDate: "Present"<br />
           <br />
         </span><br />
         &gt; Alex.resume<br />
-        &nbsp;&nbsp;=> "<a target="_blank" href="Alexla.pdf">Alexla.pdf</a>"<br><br />
+        &nbsp;&nbsp;=> "<a target="_blank" href="https://drive.google.com/file/d/1-uc1vuNjCOVgnFVkeengx5EVRsdQpoNO/view?usp=sharing's%20Resume.pdf">Alex's_Resume.pdf</a>"<br><br />
         &gt; Alex.thoughts<br /><br />
         &nbsp;&nbsp;=> ["<a target="_blank" href="https://www.linkedin.com/in/alex-la-05015a17a/?originalSubdomain=ca">LinkedIn</a>",
         "<a target="_blank" href="https://twitter.com/alex5rfischer">Twitter</a>",
@@ -96,38 +84,35 @@
   </div>
 
 
-  <div class="middle-container">
-    <div class="resume">
+  <div id="resume">
+    <div class="inner">
       <!--<img src="images/Alex.png" alt="Profile Picture">-->
-      <h2>Résumé</h2>
-      <p class="resumetitle" style="text-align: left;">Education</p>
-      <hr class="education">
+      <h2 class="tagline">Résumé</h2>
+      <p class="section-tagline" style="text-align:left;">Education</p>
       <p class="intro"></p>
 
       <p>
-        <a target="_blank" href="https://appliedtechnology.humber.ca/programs/computer-engineering-technology.html"><img class="icon" src="images/humberLogo.png"></a><b id="institution">Humber College</b>
-        <span class="resumetitle"><i id="time">2019-2021</i></span><br><b id="program">Computer Engineering Technology,Adv Diploma</b>
-        <span class="resumetitle"><i id="city">Etobicoke, ON</i></span><br>
-        <br>
-      <p id="relevantCourse">Relevant Coursework:</p><br>
+        <a target="_blank" href="https://appliedtechnology.humber.ca/programs/computer-engineering-technology.html"><img class="icon" src="images/humberLogo.png"></a><b>Humber College</b>
+        <span class="right"><i>2019 - 2021</i></span><br><b>Computer Engineering Technology, Adv Diploma</b>
+        <span class="right"><i>Etobicoke, ON</i></span><br><br>
+        Relevant Coursework:<br>
       </p>
 
       <ul style="list-style:circle;">
-        <li class="course">Algorithms&nbsp;and&nbsp;Data&nbsp;Structure&nbsp;In&nbsp;Java&nbsp;</li><br>
-        <li class="course">Object&nbsp;-&nbsp;Oriented&nbsp;Programming&nbsp;</li><br>
-        <li class="course">Databases&nbsp;With&nbsp;Java&nbsp;</li><br>
-        <li class="course">Programming&nbsp;Techniques&nbsp;in&nbsp;Java&nbsp;</li><br>
-        <li class="course">Internet&nbsp;Programming&nbsp;</li><br>
-        <li class="course">Design&nbsp;and&nbsp;Analysis&nbsp;of&nbsp;Algorithms&nbsp;</li><br>
-        <li class="course">Programming&nbsp;Fundamentals&nbsp;</li><br>
-        <li class="course">Introduction&nbsp;To&nbsp;Software&nbsp;Engineering&nbsp;</li><br>
-        <li class="course">Principles&nbsp;of&nbsp;Software&nbsp;Development&nbsp;</li><br>
-        <li class="course">Software&nbsp;Project&nbsp;</li><br>
-        <li class="course">Micro&nbsp;Assembly&nbsp;Language&nbsp;Programming&nbsp;</li><br>
-        <li class="course">Hardware&nbsp;Production&nbsp;Technology&nbsp;</li><br>
-        <li class="course">Unix&nbsp;Scripting&nbsp;</li><br>
-        <li class="course">Unix&nbsp;Internals&nbsp;</li><br>
-        <li class="course">Technical&nbsp;C&nbsp;</li><br>
+        <li>Algorithms and Data Structure In Java</li>
+        <li>Object-Oriented Programming</li>
+        <li>Databases With Java</li>
+        <li>Programming Techniques With Java</li>
+        <li>Internet Programming</li>
+        <li>Design and Analysis of Algorithms</li>
+        <li>Programming Fundamentals</li>
+        <li>Introduction To Software Engineering</li>
+        <li>Principles of Software Development</li>
+        <li>Micro-Assembly Language Programming</li>
+        <li>Hardware Production Technology</li>
+        <li>Unix Scripting</li>
+        <li>Unix internals</li>
+        <li>Technical C</li>
       </ul>
 
       <span id="tools-humber" class="tools">C/C++</span>
@@ -139,35 +124,33 @@
 
       <!--Udemy Web Development-->
       <p>
-        <a target="_blank" href=""><img class="icon" src="images/udemy.png"></a><b id="Udemy">Udemy</b>
-        <span class="resumetitle"><i id="time">2019 - 2021</i></span><br><b id="program-web">Web Development Bootcamp</b>
-        <span class="resumetitle"><i id="city">Online</i></span><br>
-        <br>
-      <p id="udemy-relevantCourse">Relevant Coursework:</p><br>
+        <a target="_blank" href="https://appliedtechnology.humber.ca/programs/computer-engineering-technology.html"><img class="icon" src="images/udemy.png"></a><b>Udemy</b>
+        <span class="right"><i>2021 - 2021</i></span><br><b>Web Development Bootcamp, Certificate</b>
+        <span class="right"><i>Online</i></span><br><br>
+        Relevant Coursework:<br>
       </p>
 
       <ul style="list-style:circle;">
-        <li class="course">Front&nbsp;End&nbsp;Web&nbsp;Development&nbsp;</li><br>
-        <li class="course">Intermediate&nbsp;HTML&nbsp;</li><br>
-        <li class="course">Intermediate&nbsp;CSS&nbsp;</li><br>
-        <li class="course">Intermediate&nbsp;Bootstrap&nbsp;</li><br>
-        <li class="course">Intermediate&nbsp;Javascript&nbsp;</li><br>
-        <li class="course">The&nbsp;Document&nbsp;Object&nbsp;Model(DOM)&nbsp;</li><br>
-        <li class="course">jQuery&nbsp;</li><br>
-        <li class="course">Backend&nbsp;Web&nbsp;Development&nbsp;</li><br>
-        <li class="course">Node.js&nbsp;</li><br>
-        <li class="course">Express.js&nbsp;with&nbsp;Node.js&nbsp;</li><br>
-        <li class="course">Application&nbsp;Programming&nbsp;Interfaces&nbsp;</li><br>
-        <li class="course">Databases&nbsp;</li><br>
-        <li class="course">SQL&nbsp;</li><br>
-        <li class="course">MongoDB&nbsp;</li><br>
-        <li class="course">Mongoose&nbsp;</li><br>
-        <li class="course">Authentication&nbsp;&&nbsp;Security&nbsp;</li><br>
-        <li class="course">React.js&nbsp;</li><br>
+        <li>Front End Web Development</li>
+        <li>Intermediate HTML</li>
+        <li>Intermediate CSS</li>
+        <li>Intermediate BootStrap</li>
+        <li>Intermediate JavaScript</li>
+        <li>The Document Object Model(DOM)</li>
+        <li>JQuery</li>
+        <li>Backend Web Development</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>Application Programming Interfaces</li>
+        <li>Databases</li>
+        <li>SQL</li>
+        <li>MongoDB</li>
+        <li>Authentication & Security</li>
+        <li>React.js</li>
       </ul>
       <p>
 
-        <span id="tools-udemy" class="tools">HTML5</span>
+        <span id="tools-humber" class="tools">HTML5</span>
         <span class="tools">CSS</span>
         <span class="tools">JavaScript</span>
         <span class="tools">Jquery</span>
@@ -175,82 +158,53 @@
       </p>
 
     </div>
-    <div class="skills">
-      <p class="resumetitle" style="text-align: left;">Work Experience</p>
-      <hr class="education">
-      <!--First Work Experience-->
-      <p>
-        <a target="_blank" href=""><img class="treasurer" src="images/udemy.png"></a><b id="IEEE">INSTITUTE OF ELECTRICAL AND ELECTRONIC ENGINEERS</b>
-        <span class="resumetitle"><i id="time-IEEE">2019 - 2021</i></span><br><b id="position">TREASURER</b>
-        <span class="resumetitle"><i id="city-treasurer">Humber College</i></span><br>
-        <br>
-      </p>
 
-      <p class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+    <div class="resume">
+      <div class="inner">
+        <p class="section-tagline" style="text-align:left;">Work Experience</p>
+        <!--First Work Experience-->
+        <p>
+          <a target="_blank" href="https://appliedtechnology.humber.ca/programs/computer-engineering-technology.html"><img class="icon" src="images/udemy.png"></a><b>Institure Of Electrical And Electronic Engineers</b>
+          <span class="right"><i>2019 - 2021</i></span><br><b>Treasurer</b>
+          <span class="right"><i>Humber College</i></span><br><br>
+        </p>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
 
-      <p>
-        <span id="tools-IEEE" class="tools">HTML5</span>
-        <span class="tools">CSS</span>
-        <span class="tools">JavaScript</span>
-        <span class="tools">Jquery</span>
-        <span class="tools">React.js</span>
-      </p>
+        <p>
+          <span id="tools-humber" class="tools">Organization Skills</span>
+          <span class="tools">Discipline</span>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="work">
+    <div class="inner-work">
+      <p class="tagline">Work + Fun</p>
+
+      <div class="portfolio-thumb portfolio-big">
+        <a class="image-popup-no-margins" href="https://github.com/Alex5rfischer/Budget-Roomba"><img src="images/BudgetRoombaUI.png" id="EasyTaxImage"></a>
+        <p class="description"><b><br>Budget Roomba</b>&nbsp;&nbsp; A group project for our senior capstone class was inspired by Roomba. We re-created a tool for people to use to have an extra hand with cleaning their home. This will be a simple robotic platform where users can control and manage their Budget-Roomba. We are interested in the simplicity of its humble feature set, and excited for its potential to assist users around the house with cleaning. Working as a designer and developer. Currently in development.
+
+        </p>
+      </div>
+      <div class="row">
+        <div class="portfolio-thumb">
+          <a class="image-popup-no-margins" href="https://github.com/AlexLa00/EasyTax"><img src="images/EasyTaxLogo.png" id="EasyTaxLogo"></a>
+          <p class="description"><b><br>EasyTax</b>&nbsp;&nbsp;an android application to help users fill out their tax return forms and estimate tax return amount.</p>
+        </div>
+        <div class="portfolio-thumb">
+          <a class="image-popup-no-margins" href="https://github.com/Alex5rfischer/Bohemian"><img src="images/labs2.png" id="EasyTaxLogo"></a>
+          <p class="description"><b><br>Bohemian</b>&nbsp;&nbsp; Worked on front-end & backend development using HTML, CSS, & Javascript to create a online clothing store.</p>
+        </div>
+      </div>
 
     </div>
   </div>
-
-  <div class="skill-row">
-    <!--<img class="chilli-img" src="images/chillies.png" alt="Skills">-->
-    <h2 class="work-title">Work + Fun</h2>
-
-    <div id="work"><div class="inner">
-
-				<div class="portfolio-thumb portfolio-big">
-					<a class="image-popup-no-margins" href="https://github.com/AlexLa00/EasyTax"><img src="images/happen.png"></a>
-					<p class="description"><b>Happen</b>&nbsp;&nbsp; A group project for our senior software design capstone class inspired by our collective frustration with current social media’s focus on making our backlogs public. We want to create a tool for people to make plans for the future with all interactions between users kept private. This will be a simple planning platform where users can keep a list of things they want to do and friends can ambiently express their interest by swiping “me too.” We expect further communication to take place outside the app and are interested in the simplicity of its humble feature set, and its potential to encourage offline communication and activity. Working as a designer and developer. Currently in development.
-
-</p>
-				</div>
-				<div class="row">
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/bike2.png"><img src="img/portfolio/bike2.png"></a>
-						<p class="description"><b>Illustrations</b>&nbsp;&nbsp; I like to draw things I like. My Schwinn ride pictured above.</p>
-					</div>
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/labs2.png"><img src="img/portfolio/labs2.png"></a>
-						<p class="description"><b>IDEO Labs</b>&nbsp;&nbsp; Worked on front-end development of a wordpress theme designed for the new <a target="_blank" href="http://labs.ideo.com">IDEO Labs site</a>.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/apollo2.png"><img src="img/portfolio/apollo2.png"></a>
-						<p class="description"><b>Apollo</b>&nbsp;&nbsp; An internal summer intern project at IDEO. Apollo is
-						 a searchable community of people tagged with rich psychographic data, curated to provide resolution and reach to companies looking
-						 for research candidates.
-						</p>
-					</div>
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/xx_03.png"><img src="img/portfolio/xx_03.png"></a>
-						<p class="description"><b>Music Visualizer</b>&nbsp;&nbsp; Experimental summer
-						project using WebGL and Three.js with a beat detection algorithm to make an interactive 3D music visualization of album artwork using orbit controls. Play <a target="_blank" href="visualizer/xx.html">here</a>.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="portfolio-thumb">
-						<a class="popup-vimeo" href="http://vimeo.com/41632558"><img src="img/portfolio/cube2.png"></a>
-						<p class="description"><b>LED Cube</b>&nbsp;&nbsp; Built with a friend as a final project for USC EE 201: Introduction to Digital Circuits. Constructed an 8x8x8 LED Cube three-dimensional display. Designed and wired the driver circuit board. Wrote application modules in Verilog to navigate the cube. </p>
-					</div>
-					<div class="portfolio-thumb">
-						<a class="image-popup-no-margins" href="img/portfolio/homefit.png"><img src="img/portfolio/homefit.png"></a>
-						<p class="description"><b>Homefit</b>&nbsp;&nbsp; Working with Executive Director of Digital Innovation at USC Viterbi School of Engineering, Ashish Soni, to research, conceptualize, wireframe, and design a new online tool for people looking to buy a home. </p></div>
-					</div>
-				</div>
-			</div>
-
-  </div>
-
 
   <div class="bottom-container">
     <p class="copyright">© 2018 Alex La.</p>

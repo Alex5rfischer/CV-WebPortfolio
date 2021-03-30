@@ -2,12 +2,143 @@
 .Name {
   position: fixed;
   margin: 25px auto 50px 46%;
-  font-family: 'times new roman', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   color: #333;
   letter-spacing: 0.2em;
   text-decoration: none;
   text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  position: absolute;
+  top:0px;
+  right: 0px;
+  padding: 70px 50px 0 10px;
+}
+
+.toc-holder {
+  text-align: right;
+/*  //min-width: 60px;*/
+  z-index: 30000;
+
+}
+
+.toc-holder a {
+  text-decoration: none;
+ -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.toc-holder li li a {
+  padding-left: 60px;
+}
+
+.toc-holder li li li a {
+  padding-left: 90px;
+}
+
+.toc-holder li a:hover {
+  color: #000;
+/*  padding-left: 35px;*/
+}
+
+.toc-holder li li a:hover {
+  padding-left: 65px;
+}
+
+.toc-holder li li li a:hover {
+  padding-left: 95px;
+}
+
+.toc-holder {
+  position: fixed;
+  right: 0;
+}
+
+a.toc-link {
+  color: #ccc;
+  position: relative;
+  display: block;
+  z-index: 1000;
+  min-width:200px;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 30px;
+  padding-top: 24px;
+  width: 100%;
+  background: #fafafa;
+}
+
+a.toc-link:hover {
+  background: #fafafa;
+}
+
+.toc-link span {
+  font-size: 30px;
+  margin-right: 70px;
+  display: inline-block;
+  -webkit-transition: -webkit-transform .4s ease;
+  -moz-transition: -moz-transform .4s ease;
+  -o-transition: -o-transform .4s ease;
+  -ms-transition: -ms-transform .4s ease;
+  transition: transform .4s ease;
+}
+
+.toc-link span.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.toc {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  opacity: 0.5;
+  right:0px;
+  background: #fafafa;
+  width: auto;
+  padding-top: 60px;
+}
+
+ul.toc {
+  -webkit-padding-start: 0px;
+}
+
+.toc-h1 a {
+  color: #333;
+  padding: 5px 20px 5px 30px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.closed {
+  display: block;
+}
+
+.top-link {
+  display: block;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  padding: 8px 16px 0 16px;
+  height: 30px;
+  font-size: 14px;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .copyright {
@@ -64,7 +195,7 @@
 }
 
 .ieee{
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   text-transform: uppercase;
   letter-spacing: 0.3em;
   font-weight: 700;
@@ -78,15 +209,6 @@
   list-style: none;
   text-decoration: none;
   width: auto;
-}
-
-.toc-h1 a {
-  color: #333;
-  padding: 5px 20px 5px 30px;
-  display: block;
-  font-family: 'Monteserrat', sans-serif;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
 }
 
 /*1. dropdown ICON*/
@@ -158,21 +280,22 @@
   padding-bottom: 100px;
 }
 
-.middle-container {
+/* .middle-container {
   background-color: #ddd;
   padding-top: 25px;
   padding-bottom:2.5px;
-}
+} */
 
 .bottom-container {
-  padding: 10px auto 20px;
-  margin: 8px auto 8px auto;
+  background-color: white;
+  padding: 50px auto 30px auto;
+  margin: 0 auto 8px auto;
 }
 
 .workexperience-description{
   width: 50%;
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   letter-spacing: 0.3em;
   font-weight: 700;
   padding-bottom: 50px;
@@ -181,20 +304,23 @@
   color: #333333;
 }
 
-.resume {
-  width: 50%;
-  margin: 100px auto 100px auto;
+#resume{
+  background-color: #ddd;
+  margin-top: -30px;
+  padding-top: 125px;
+  padding-bottom: 100px;
   text-align: left;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 0.3em;
-  font-weight: 700;
-  font-size: 11px;
-  text-transform: uppercase;
+  line-height: 34px;
+  font-size: 17px;
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#resume .inner {
+    width: 85%;
 }
 
 .resumetitle {
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   font-weight: 700;
@@ -205,7 +331,7 @@
 }
 
 .workexperience-title{
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   text-transform: uppercase;
   letter-spacing: 0.3em;
   font-weight: 700;
@@ -226,12 +352,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.skills {
+/* .skills {
   width: 50%;
   font-family: 'Open Sans', sans-serif;
   margin: 100px auto 100px auto;
   text-align: left;
-}
+} */
 
 .skill-row{
   background-color: #EFEBEC;
@@ -257,14 +383,31 @@
   margin-bottom: 50px;
 }
 
-.education {
-  border-bottom: none;
-  margin-bottom: 50px;
-  width: 80%;
+
+.tagline {
+    text-align: center;
+    /* font-family: 'Open Sans', sans-serif; */
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    padding-bottom: 50px;
+    font-size: 11px;
+    text-transform: uppercase;
 }
 
-.work-title{
-  text-align: center;
+.right {
+    float: right;
+}
+
+.section-tagline {
+    text-align: center;
+    /* font-family: 'Open Sans', sans-serif; */
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #CEC8C8;
+    font-size: 11px;
+    text-transform: uppercase;
 }
 
 a {
@@ -272,15 +415,18 @@ a {
   text-decoration: none;
 }
 
-body {
-  /*Margin alone configures all fours sides of your element that is selected*/
-  margin: 0px;
-  font-family: 'Merriweather', serif;
+b {
+    font-weight: bold;
 }
 
-h1 {
-  margin-top: 0px;
-  font-family: 'Sacramento', cursive;
+body {
+    margin: 0;
+    font-size: 19px;
+    /* font-family: 'Karla', sans-serif; */
+    line-height: 20px;
+    color: #333333;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
 }
 
 h2 {
@@ -288,13 +434,58 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   letter-spacing: 0.3em;
   padding-bottom: 50px;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+img.icon {
+    width: 65px;
+    height: 65px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    display: block;
+    margin-left: -95px;
+    margin-top: 5px;
+    background-color: #fff;
+    opacity: 0.8;
+    z-index: 0;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    -webkit-transition: all .4s ease;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#EasyTaxImage{
+  width:100%;
+  height:75%;
 }
 
 #frontimage img {
@@ -317,15 +508,15 @@ h3 {
   font-size: 13px;
   position: relative;
   color: white;
-  height: 600px;
-  width: 600px;
+  height: 800px;
+  width: 800px;
 }
 
-#institution {
+/* #institution {
   font-size: 12px;
   margin-right: 51%;
   white-space: nowrap;
-}
+} */
 
 #city-treasurer{
   font-size: 12px;
@@ -343,11 +534,11 @@ h3 {
   margin-right: 62%;
 }
 
-#program {
+/* #program {
   font-size: 12px;
   margin-right: 13.4%;
   white-space: nowrap;
-}
+} */
 
 #IEEE{
   font-size: 12px;
@@ -359,10 +550,10 @@ h3 {
   margin-right: 45%;
 }
 
-#time {
+/* #time {
   font-size: 12px;
   white-space: nowrap;
-}
+} */
 
 #time-IEEE{
   font-size: 12px;
@@ -371,7 +562,7 @@ h3 {
 }
 
 #tools-humber {
-  margin-left: -23%;
+  margin-left: 0%;
 }
 
 #tools-udemy {
@@ -382,10 +573,10 @@ h3 {
   margin-left: 9%;
 }
 
-#city {
+/* #city {
   font-size: 12px;
   white-space: nowrap;
-}
+} */
 
 #relevantCourse {
   font-size: 14px;
@@ -403,17 +594,33 @@ h3 {
   white-space: nowrap;
 }
 
+#work {
+    background: #eee;
+    height: auto;
+    margin-top: -30px;
+    text-align: center;
+    padding: 60px 0 80px 0;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+#EasyTaxLogo{
+  border:none;
+  height: 460.7px;
+  width: 440px;
+}
+
 
 /*Final Section*/
 
 .inner {
-    max-width: 1024px;
+    max-width: 830px;
     margin: 0 auto;
 }
 
-.portfolio-big {
-    width: 95%;
-    height: 680px;
+.inner-work {
+    max-width: 950px;
+    margin: 0 auto;
 }
 
 .portfolio-thumb {
@@ -428,8 +635,9 @@ h3 {
 }
 
 .portfolio-big {
-    width: 95%;
+    width: 96%;
     height: 680px;
+    margin-left: 0.6%
 }
 
 
@@ -440,12 +648,4 @@ h3 {
     padding-top: 0px;
     text-align: left;
     line-height: 24px;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
