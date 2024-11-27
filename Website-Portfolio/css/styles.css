@@ -5,7 +5,7 @@
   justify-content: center; /* Center horizontally */
   height: 100%; /* Ensure it takes up the full height of the navbar */
   text-decoration: none; /* Remove underline from the link */
-  color: #000000; /* Text color */
+  color: #808080; /* Text color */
   font-size: 18px; /* Adjust font size */
   letter-spacing: 0.2em;
   font-family: 'Montserrat', sans-serif;
@@ -100,20 +100,41 @@
   display: block;
 }
 
+.email {
+  color: #3a92c8; /* Link light blue */
+}
+
+.array {
+  display: inline;
+}
+
 .answer {
   color: white;
 }
 
-.top-container p {
-  color: white;
-  text-align: center;
+/* Code Block */
+.code-block {
+  position: absolute;         /* Take the child out of normal document flow */
+  top: 50%;                   /* Move the child down by 50% of the parent's height */
+  left: 50%;                  /* Move the child right by 50% of the parent's width */
+  transform: translate(-50%, -50%); /* Adjust by 50% of the child's width and height to center */
+  height: 550px;
+  width: 800px;
+  padding: 45px 45px 45px 0px;
+  font-size: 13px;
+  box-sizing: border-box;
+  background-color: #383737;
 }
 
 .top-container {
-  background-color: #E3D0AE;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  height: 750px;
+  width: auto;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #E3D0AE;
+  color: #fdfdfd;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .middle-container {
@@ -237,8 +258,9 @@ body {
 }
 
 h1 {
-  margin-top: 0px;
-  font-family: 'Sacramento', cursive;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h2 {
@@ -359,6 +381,17 @@ h3 {
   text-align: left;
   margin-left:9%;
   white-space: nowrap;
+}
+
+#top-header{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
 }
 
 
