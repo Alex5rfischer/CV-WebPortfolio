@@ -48,11 +48,10 @@
 
 .icon {
   position: relative;
-  float: left;
-  bottom: 8px;
-  right: 1%;
-  width: 65px;
   height: 65px;
+  width: 65px;
+  right: 120%;
+  top: 8px;
 }
 
 .treasurer{
@@ -141,6 +140,110 @@
   background-color: #ddd;
   padding-top: 25px;
   padding-bottom:2.5px;
+  padding: 30px;
+  max-width: 100%;
+  margin: auto;
+
+  /* Flexbox properties for centering the education section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px; /* Set a minimum height for better centering */
+}
+
+.college-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.college-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.college-info h2 {
+  position: relative;
+  font-family: 'Monteserrat', sans-serif;
+  right: 14.5%;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.5;
+  padding-top: 25px;
+}
+
+.college-info p {
+  position: relative;
+  font-family: 'Monteserrat', sans-serif;
+  right: 14.5%;
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.5;
+}
+
+.college-info {
+  flex: 1;
+}
+
+.education-right {
+  text-align: right;
+  flex: 0 0 auto;
+  line-height: 1.5;
+  padding-top: 25px;
+  font-style: italic;
+  font-family: 'Monteserrat', sans-serif;
+}
+
+.education-right p {
+  margin: 0;
+  font-size: 1rem;
+  color: #777;
+}
+
+.relevant-coursework {
+  margin-top: 20px;
+}
+
+.relevant-coursework h3 {
+  font-family: 'Karla', sans-serif;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.relevant-coursework ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 50px;
+  color: #555;
+}
+
+.relevant-coursework li {
+  padding-bottom: 10px;
+  font-family: 'Karla', sans-serif;
+  list-style: circle;
+}
+
+.skills-section {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.skill {
+  background-color: #e6e6e6;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .bottom-container {
@@ -160,31 +263,39 @@
   color: #333333;
 }
 
-.resume {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 0.3em;
-  font-weight: 700;
-  font-size: 11px;
-  text-transform: uppercase;
+.resume{
+  width: 750px;
 }
 
-.resumetitle {
-  font-family: 'Open Sans', sans-serif;
+.resume h1 {
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.resume-header {
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
   font-weight: 700;
-  margin-left: 10%;
   font-size: 11px;
+  letter-spacing: 0.2em;
+  padding-top: 40px;
+}
+
+.resume-title{
+  text-align: left;
+  color: 000000;
+  font-family: 'Karla', sans-serif;
   letter-spacing: 0.3em;
-  white-space: nowrap;
+}
+
+.educationDetails{
+
 }
 
 .workexperience-title{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Karla', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   font-weight: 700;
@@ -217,7 +328,7 @@
   padding-top: 60px;
 }
 
-.tools {
+.skill {
   border: 1px solid #50a9d1;
   margin-right: 10px;
   text-transform: uppercase;
@@ -234,6 +345,12 @@
   -o-border-radius: 8px;
   border-radius: 8px;
   margin-bottom: 50px;
+  font-family: 'Karla', sans-serif;
+}
+
+.skills-section {
+  margin-left: -15%;
+  margin-top: 0.8%;
 }
 
 .education {
@@ -242,7 +359,14 @@
   width: 80%;
 }
 
-.work-title{
+#bottom-container-header{
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 5%;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -252,9 +376,7 @@ a {
 }
 
 body {
-  /*Margin alone configures all fours sides of your element that is selected*/
   margin: 0px;
-  font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -263,14 +385,18 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  margin-right: 5%;
+#middle-container-header{
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 11px;
   font-family: 'Montserrat', sans-serif;
+  margin-right: 5%;
+  font-weight: 700;
+  font-size: 13px;
   letter-spacing: 0.3em;
   padding-bottom: 50px;
+}
+
+h2 {
+
 }
 
 h3 {
@@ -303,8 +429,9 @@ h3 {
 
 #institution {
   font-size: 12px;
-  margin-right: 51%;
-  white-space: nowrap;
+  position: relative;
+  right: 30%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #city-treasurer{
@@ -320,13 +447,14 @@ h3 {
 }
 
 #Udemy {
-  margin-right: 62%;
+  margin-right: 62.5%;
 }
 
 #program {
   font-size: 12px;
-  margin-right: 13.4%;
-  white-space: nowrap;
+  position:relative;
+  right: 10.24%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #IEEE{
@@ -341,7 +469,10 @@ h3 {
 
 #time {
   font-size: 12px;
-  white-space: nowrap;
+  position: relative;
+  font-family: Helvetica, Sans-Serif;
+  font-style: italic;
+  left: 23.5%;
 }
 
 #time-IEEE{
@@ -350,21 +481,16 @@ h3 {
   white-space: nowrap;
 }
 
-#tools-humber {
-  margin-left: -23%;
-}
-
-#tools-udemy {
-  margin-left: -22%;
-}
-
 #tools-IEEE{
   margin-left: 9%;
 }
 
 #city {
   font-size: 12px;
-  white-space: nowrap;
+  position: relative;
+  font-family: Helvetica, Sans-Serif;
+  font-style: italic;
+  left: 4%;
 }
 
 #relevantCourse {
