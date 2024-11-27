@@ -133,7 +133,6 @@
   padding: 30px;
   background-color: #E3D0AE;
   color: #fdfdfd;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .middle-container {
@@ -210,6 +209,13 @@
   margin-top: 20px;
 }
 
+.relevant-coursework p{
+  font-family: 'Karla', sans-serif;
+  font-size: 1em;
+  color: #333;
+  line-height: 22px;
+}
+
 .relevant-coursework h3 {
   font-family: 'Karla', sans-serif;
   font-size: 1em;
@@ -234,7 +240,18 @@
 .skills-section {
   margin-top: 30px;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 5px;
+}
+
+.skills-section-brainstation{
+  display: relative;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-right: 250px;
+  width: 800px;
+  gap: 5px;
 }
 
 .skill {
@@ -357,6 +374,11 @@
   border-bottom: none;
   margin-bottom: 50px;
   width: 80%;
+}
+
+#udemy-image{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 #bottom-container-header{
